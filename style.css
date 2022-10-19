@@ -1,0 +1,516 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* .example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+} */
+
+@font-face{
+    src: url(./fonts/Gilroy-Regular.ttf);
+    font-family: Gilroy;
+    font-weight: 400;
+}
+
+@font-face{
+    src: url(./fonts/Gilroy-Medium.ttf);
+    font-family: Gilroy;
+    font-weight: 500;
+}
+
+@font-face{
+    src: url(./fonts/Gilroy-Bold.ttf);
+    font-family: Gilroy;
+    font-weight: 600;
+}
+
+@font-face{
+    src: url(./fonts/Gilroy-ExtraBold.ttf);
+    font-family: Gilroy;
+    font-weight: 700;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family:Gilroy;
+    /* background-color: #494949; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#fs{
+    color: #fff;
+    font-size: 5vw;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    z-index: 999;
+}
+#fs #text2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;    
+    /* background-color: #ff0000; */
+}
+
+#text2 h1{
+    z-index: 99;
+    position: absolute;
+    overflow: hidden;
+    background-color: transparent;
+    font-size: 10vw;
+}
+
+#text2 span{
+    background-color:transparent;
+    display: inline-block;
+    font-weight: 530;
+    position: relative;
+    -webkit-transform: translateY(170px);
+        -ms-transform: translateY(170px);
+            transform: translateY(170px);  
+}
+
+#cube{
+    position: absolute;
+    position: relative;
+    z-index: 9;
+    /* width: 30%;   */
+    /* height: 27vw; */
+    /* background-color: #ff0000;*/
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+}
+
+#cube img{
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#main{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav{
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 0%;
+    height: 10vh;
+    background-color: transparent;
+    border-bottom: 1px solid #757373;
+    overflow: hidden;
+}
+
+.child{
+    width: 33.3%;
+    height: 100%;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    background-color: transparent;
+}
+
+.child .cover{
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 3vw;
+    bottom: 0%;
+    width: 33.3%;
+    height: 0%;
+    background-color: #6967676c;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    position: absolute;
+}
+
+#single{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #000;
+    position: absolute;
+    bottom: 0%;
+    width: 33.3%;
+    background-color: #fff;
+    height: 4%;
+    padding: 0 3vw;
+    overflow: hidden;
+}
+
+.child span{
+    opacity: 0;
+    color: #000;
+}
+
+.cover span{
+    opacity: 0;
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.child h1{
+    padding: 30px 2vw;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #fff;
+}
+
+#nav2{  
+    position: absolute;
+    top: 10%;
+    min-height: 10vh;
+    padding: 0px 30px;
+    min-width: 100vw;
+    z-index: 9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* background-color:#ff0000; */
+}
+
+#nav2 h5{
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+}
+
+#n2left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 100px;
+    min-width: 30%;
+    /* background-color: #fff000; */
+    min-height: inherit;
+}
+
+#n2left .tag{
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+
+#n2left .line{
+    width: 0%;
+    left: 0%;
+    bottom: 20px;
+    position: absolute;
+    height: .1vw;
+    background-color: #fff;
+
+}
+
+#n2left a{
+    text-decoration: none;
+    color: #fff;
+    /* background-color: aquamarine; */
+}
+
+
+.text{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   cursor: pointer;
+   text-align: center;
+   justify-content: center;
+   width: fit-content;
+   /* background-color: violet; */
+   height: 20vw;
+}
+
+.text h5{
+    /* margin-bottom: 0vh; */
+    position: absolute;
+    font-size: .6vw;
+    background-color: transparent;
+    letter-spacing: 2px;
+    font-weight: 400;
+    opacity: 0;
+    color: #fff;
+    bottom: 30px;
+    white-space: nowrap;
+}
+
+.text h1{
+    font-size: 10vw;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 548;
+    /* font-family: Rubik; */
+    overflow: hidden;
+}
+
+.text h1 span{
+    /* background-color: #ff0000; */
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    -webkit-transform:translateY(150px);
+        -ms-transform:translateY(150px);
+            transform:translateY(150px);
+    opacity: 0;
+}  
+
+.border{
+    position: fixed;
+    left: 0;
+    bottom: 5vw;
+    width: 0%;
+    height: .8vw;
+    background-color: #fff;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center;
+}
+
+#sixteen{
+    background-color: #000;
+}
+
+#twelve h1{
+    white-space: nowrap;
+}
+
+#t1{
+    height: 23vw;
+    /* background-color: #000; */
+}
+ 
+#eleven .text{
+    height: 30vw;
+    white-space: nowrap;
+}
+
+#eleven .border{
+    bottom: 100px;
+}
+
+ #sixteen .text{
+    height: 30vw;
+    /* background-color: #000; */
+}
+ 
+ #t1 .border{
+    margin-bottom: 0vw;
+}
+
+#thirteen .text{
+    height: 20vw;
+    white-space: nowrap;
+}
+
+#thirteen .text h1{
+    font-size: 7vw;
+}
+
+#thirteen .border{
+    bottom: 50px;
+}
+
+#thirteen h5{
+    bottom: -30px;
+}
+
+
+#one .text{
+    height: 70vh;
+}
+
+#one h5{
+    margin-bottom: -50px;
+    /* background-color: #000; */
+}
+
+@media(max-width: 500px){
+    #nav2 a{
+        font-size: 5vw;
+        /* width: 50px; */
+    }
+
+    #nav2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    #nav2 #n2left{
+        gap: 20px;
+    }
+
+    #n2left .line{
+        bottom: 20px;
+    }
+
+    #nav2 h5{
+        font-size: 5vw;
+    }
+
+    #nav .cover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text h1{
+        font-size: 12vw;
+    }
+
+    .text{
+        height: 200px;
+    }
+
+    .text h5{
+        bottom: 60px;
+        font-size: .7vw;
+    }
+
+    .text .border{
+       bottom: 70px;
+    }
+    #one .text .border{
+       bottom: 200px;
+    }
+
+    #one .text h5{
+        top: 310px;
+    }
+    
+    #eleven .text{
+       height: 150px;
+    }
+    #eleven .text h5{
+        bottom: -120px;
+       height: 150px;
+    }
+    
+    #eleven .text .border{
+       bottom: 40px;
+    }
+
+    #thirteen .text{
+        height: 50vw;
+    }
+
+    #thirteen h5{
+        bottom: 30px;
+    }
+    
+    #sixteen .text{
+        height: 40vw;
+    }
+    
+    #sixteen .text .border{
+       bottom: 8px;
+    }
+}
