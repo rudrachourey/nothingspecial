@@ -256,10 +256,10 @@ function cubeanimation() {
   })
 
   tl.to("#cube", {
-    height: `${100 * cth}%`,
-    width: `${ctw * 180}%`,  
+    height: `${80 * cth}%`,
+    width: `${ctw * 200}%`,  
     // scale: 1.1,
-    ease: Circ.easeInOut,
+    ease: Expo.inOut,
     duration: .8,
 
     onComplete: function () {
