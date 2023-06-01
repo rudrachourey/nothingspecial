@@ -43,25 +43,25 @@
 } */
 
 @font-face{
-    src: url(./fonts/Gilroy-Regular.ttf);
+    src: url(./Gilroy-Regular.ttf);
     font-family: Gilroy;
     font-weight: 400;
 }
 
 @font-face{
-    src: url(./fonts/Gilroy-Medium.ttf);
+    src: url(./Gilroy-Medium.ttf);
     font-family: Gilroy;
     font-weight: 500;
 }
 
 @font-face{
-    src: url(./fonts/Gilroy-Bold.ttf);
+    src: url(./Gilroy-Bold.ttf);
     font-family: Gilroy;
     font-weight: 600;
 }
 
 @font-face{
-    src: url(./fonts/Gilroy-ExtraBold.ttf);
+    src: url(./Gilroy-ExtraBold.ttf);
     font-family: Gilroy;
     font-weight: 700;
 }
